@@ -23,7 +23,10 @@
 
         <config-file target="*-Info.plist" parent="LocalyticsAppKey">
             <array>
-                <string>f700b1c385b10c2137b6a93-415f62ba-4a3c-11e5-6a70-00736b041834</string>
+                <dict>
+                    <key>LocalyticsAppKey</key>
+                    <string>f700b1c385b10c2137b6a93-415f62ba-4a3c-11e5-6a70-00736b041834</string>
+                </dict>
             </array>
         </config-file>
 
