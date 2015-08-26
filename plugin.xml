@@ -17,17 +17,23 @@
 
         <config-file target="config.xml" parent="/*">
             <feature name="LocalyticsPlugin">
-                <param name="ios-package" value="LocalyticsPlugin"/>
+                <param name="ios-package" value="LocalyticsPlugin" onload="true"/>
             </feature>
         </config-file>
 
         <config-file target="*-Info.plist" parent="LocalyticsAppKey">
-            <array>
-                <dict>
-                    <key>LocalyticsAppKey</key>
-                    <string>f700b1c385b10c2137b6a93-415f62ba-4a3c-11e5-6a70-00736b041834</string>
-                </dict>
-            </array>
+            <string>$APP_ID</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+          <array>
+            <dict>
+              <key>CFBundleURLSchemes</key>
+              <array>
+                <string>amp$APP_ID</string>
+              </array>
+            </dict>
+          </array>
         </config-file>
 
         <source-file src="src/ios/libLocalytics.a" framework="true"/>
