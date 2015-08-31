@@ -22,7 +22,7 @@
         </config-file>
 
         <config-file target="*-Info.plist" parent="LocalyticsAppKey">
-            <string>APP_ID</string>
+            <string>$APP_ID</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
