@@ -35,7 +35,11 @@
             </dict>
           </array>
         </config-file>
-
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+           <array>
+                <string>remote-notifications</string>
+           </array>
+        </config-file>
         <source-file src="src/ios/libLocalytics.a" framework="true"/>
         <header-file src="src/ios/Localytics.h" />
         <header-file src="src/ios/LocalyticsPlugin.h" />
